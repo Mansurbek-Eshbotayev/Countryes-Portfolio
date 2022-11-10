@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* * {
+  font-family: Spartan;
+} */
+
+body{
+  background: aqua;
+  text-align: center;
+  height: 100%;
+  transition: background .75s ease-in-out;
+}
+
+.search-box {
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 40px;
+  height: 40px;
+  background: #2f3640;
+}
+
+.search-box:hover .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.search-box:hover .search-btn {
+  background: #fff;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: #fff;
+  transition: 0.5s;
+  font-size: 1rem;
+  width: 0px;
+}
+
+.search-txt::placeholder{
+  color: #1abc9c;
+}
+
+.search-btn {
+  color: #1abc9c;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+
+@media only screen and (min-width:576px){
+  .search-box {
+    top: 50%;
+    left: 50%;
+  }
+}

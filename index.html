@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/search.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <header class="header">
+    <div class="container">
+      <nav class="navbar navbar-light d-flex  flex-wrap">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img class="count__img" src="./images/globus.png" alt="">
+          </a>
+          <form class="d-flex justify-content-between count__form" autocomplete="off">
+            <select class="form__select form-select me-3" aria-label="Default select example">
+              <option selected>Filter by Region</option>
+              <option value="region">Region</option>
+              <option value="subregion">Subregion</option>
+            </select>
+            
+            <select class="form__region form-select me-3 item-off" aria-label="Default select example">
+              <option value="Regions">Regions</option>
+              <option value="Africa">Africa</option>
+              <option value="Americas">Americas</option>
+              <option value="Asia">Asia</option>
+              <option value="Europe">Europe</option>
+              <option value="Americas">Oceania</option>
+            </select>
+            
+            <select class="form__subregion form-select me-3 item-off" aria-label="Default select example">
+              <option value="Subregion">Subregion</option>
+              <option value="South America">South America</option>
+              <option value="Southern Europe">Southern Europe</option>
+              <option value="Central America">Central America</option>
+              <option value="Eastern Asia">Eastern Asia</option>
+            </select>
+            
+            <div class="search-box">
+              <input type="text" class="search-txt form__input" name="search" placeholder="Search Country">
+              <a href="#" class="search-btn">
+                <ion-icon name="search-outline"></ion-icon>
+              </a>
+            </div>
+            <!-- <input class="form-control form__input me-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <!-- <button class="btn btn-outline-light" type="submit">Search</button> -->
+          </form>
+          
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="site-main">
+    <section class="coutryes">
+      <div class="container">
+        <ul class="country__list list-unstyled d-flex justify-content-center justify-content-md-between flex-wrap ">
+          
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- MOdal -->
+
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex justify-content-between">
+        <div class="img__wrap">
+          <img class="modal__img" src="" alt="flag">
+        </div>
+        <div class="information w-100">
+          <div class="modal__list d-flex justify-content-around w-100 text-start">
+            <div>
+              <div class="modal__item mb-3">
+                Language: <span class="fw-bold mod__lang"></span>
+              </div>
+              <div class="modal__item mb-3">
+                Currencies: <span class="fw-bold mod__cur"></span>
+              </div>
+              <div class="modal__item mb-3">
+                Subregion: <span class="fw-bold mod__sub"></span>
+              </div>
+            </div>
+            <div>
+              <div class="modal__item mb-3">
+                Area: <span><span class="fw-bold mod__area"> </span> km<sup>2</sup></span> 
+              </div>
+              <div class="modal__item mb-3">
+                Fifa: <span class="fw-bold fifa"></span>
+              </div>
+              <div class="modal__item mb-3">
+              Car: <span class="fw-bold mod__car"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

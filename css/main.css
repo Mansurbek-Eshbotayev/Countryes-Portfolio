@@ -1,0 +1,82 @@
+body{
+  background-color: rgb(88, 148, 156);
+  /* background: aqua; */
+  text-align: center;
+  height: 100%;
+  transition: background .80s ease-in-out;
+}
+
+.header{
+  background-color: rgb(62, 157, 72);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.coutryes{
+  padding-top: 80px;
+}
+
+.card{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.card__img{
+  height: 180px;
+  transition: all 0.5s ease;
+}
+
+.card__img:hover{
+  transform: scale(1.06);
+  transition: all 0.5s ease;
+  border-radius: 15px;
+}
+
+.card-body{
+  text-align: start;
+height: 240px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.count__item{
+  margin-bottom: 40px;
+}
+
+.item-off{
+  display: none;
+}
+
+.item-on{
+  display: block;
+}
+
+.count__img{
+  width: 50px;
+  height: 50px;
+}
+
+/* modal */
+.modal-dialog{
+  width: 100%;
+  max-width: 830px;
+}
+
+.modal__item{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__list{
+  padding: 10px 30px 0px 30px;
+}
+
+.modal__img{
+  width: 320px;
+  height: 200px;
+}
+
+
+
+@media only screen and (min-width:576px){
+  .coutryes{
+    padding-top: 60px;
+  }
+}
